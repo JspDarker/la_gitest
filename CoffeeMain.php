@@ -8,5 +8,5 @@
 
 class CoffeeMain
 {
-
+  protected $coffee;
 }

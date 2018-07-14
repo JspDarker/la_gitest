@@ -9,4 +9,8 @@
 class CoffeeMain
 {
   protected $coffee;
+  
+  public function setCoffee() {
+    
+  }
 }

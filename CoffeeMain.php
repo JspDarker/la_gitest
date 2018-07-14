@@ -8,5 +8,10 @@
 
 class CoffeeMain
 {
-  protected $coffee;
+    protected $coffee;
+
+    public function runDev()
+    {
+        return $this->coffee;
+    }
 }

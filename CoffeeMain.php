@@ -10,8 +10,20 @@ class CoffeeMain
 {
     protected $coffee;
 
+
     public function runDev()
     {
         return $this->coffee;
     }
+
+    public function setCoffee()
+    {
+    
+    }
+
+    public function remoteJsp()
+    {
+
+    }
+
 }

@@ -8,9 +8,16 @@
 
 class CoffeeMain
 {
-  protected $coffee;
+    protected $coffee;
   
-  public function setCoffee() {
+    public function setCoffee()
+    {
     
-  }
+    }
+
+    public function remoteJsp()
+    {
+
+    }
+
 }

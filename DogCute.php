@@ -2,31 +2,24 @@
 /**
  * Created by PhpStorm.
  * User: storm
- * Date: 14/07/2018
- * Time: 11:40
+ * Date: 18/07/2018
+ * Time: 22:55
  */
 
-class CoffeeMain
+class DogCute
 {
-    protected $coffee;
-
-
-    public function runDev()
-    {
-        return $this->coffee;
-    }
 
     public function setCoffee()
     {
-    
+
     }
 
     public function remoteAddIssue1()
     {
 
     }
-    
-    public function remoteJsp($name)
+
+    public function remoteJsp()
     {
 
     }
@@ -38,12 +31,11 @@ class CoffeeMain
 
     public function setUsername($name)
     {
-        $this->remoteJsp($name);
+
     }
 
     public function doSome()
     {
         return 1;
     }
-
 }

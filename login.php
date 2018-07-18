@@ -14,4 +14,9 @@ class Login
     {
         $this->username = $name;
     }
+
+    public function doSome()
+    {
+        return 1;
+    }
 }

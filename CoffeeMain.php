@@ -21,6 +21,11 @@ class CoffeeMain
     
     }
 
+    public function remoteAddIssue1()
+    {
+
+    }
+    
     public function remoteJsp()
     {
 

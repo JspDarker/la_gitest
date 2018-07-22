@@ -65,6 +65,7 @@ nav#nav-head > ul {
     align-content: flex-end;
     text-align: center;
 
+    flex: 3;
 }
 
 nav#nav-head ul > li {
@@ -94,3 +95,76 @@ nav#nav-head ul li a {
     border-bottom: aqua solid 3px;
     color: aqua !important;
 }
+/*DONE MENU LEVEL 1*/
+
+/*==MENU LEVEL 2==*/
+
+nav#nav-head > ul > li {
+    position: relative;
+}
+
+nav#nav-head > ul > li:hover > ul {
+    display: block;
+}
+
+nav#nav-head > ul > li > ul {
+    position: absolute;
+    top: 60px;
+    display: none;
+}
+
+nav#nav-head > ul > li > ul li {
+    display: block;
+    background-color: #232f3e;
+    width: 200px;
+    height: 40px;
+    line-height: 40px;
+    border-top: 1px solid #e21;
+}
+
+nav#nav-head > ul > li > ul > li:first-of-type {
+    border-top: 5px solid #e21;
+}
+
+nav#nav-head > ul > li > ul li:hover {
+    background: rgba(0,0,0,.5);
+}
+nav#nav-head > ul > li > ul li > a {
+    border-bottom: none;
+    color: black;
+    height: 40px;
+}
+
+nav#nav-head > ul > li > ul li > a:hover {
+    color: deepskyblue;
+}
+
+/*==MENU LEVEL 2==*/
+
+
+/*==MENU LEVEL 3==*/
+li.menu-level-3 {
+    position: relative;
+}
+
+li.menu-level-3 > ul {
+    position: absolute;
+    top: -5px;
+    left: 200px;
+    border-left: 2px seagreen solid;
+}
+
+li.menu-level-3 > ul > li.list-level-3 {
+    border-top: yellow solid 1px !important;
+    display: none !important;
+}
+li.menu-level-3 > ul > li.list-level-3:first-of-type {
+    border-top: blue solid 3px !important;
+}
+li.menu-level-3:hover > ul > li.list-level-3 {
+    display:block !important;
+}
+li.menu-level-3 > ul > li.list-level-3 a {
+    color: darkviolet !important;
+}
+/*==MENU LEVEL 3==*/

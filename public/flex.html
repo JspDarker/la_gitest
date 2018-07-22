@@ -32,8 +32,88 @@
 
         <ul>
             <li><a href="#">Home</a></li>
-            <li><a href="#">Green</a></li>
-            <li><a href="#">Begin</a></li>
+            <li><a href="#">Green</a>
+                <ul>
+                    <li class="menu-level-3"><a href="#">list 1</a>
+                        <ul>
+                            <li class="list-level-3"><a href="#">the header 1</a></li>
+                            <li class="list-level-3"><a href="#">the header 2</a></li>
+                            <li class="list-level-3"><a href="#">the header 3</a></li>
+                            <li class="list-level-3"><a href="#">the header 4</a></li>
+                            <li class="list-level-3"><a href="#">the header 5</a></li>
+                        </ul>
+                    </li>
+                    <li  class="menu-level-3"><a href="#">list 2</a>
+                        <ul>
+                            <li class="list-level-3"><a href="#">the header 1</a></li>
+                            <li class="list-level-3"><a href="#">the header 2</a></li>
+                            <li class="list-level-3"><a href="#">the header 3</a></li>
+                            <li class="list-level-3"><a href="#">the header 4</a></li>
+                            <li class="list-level-3"><a href="#">the header 5</a></li>
+                        </ul>
+                    </li>
+                    <li  class="menu-level-3"><a href="#">list 3</a>
+                        <ul>
+                            <li class="list-level-3"><a href="#">the header 1</a></li>
+                            <li class="list-level-3"><a href="#">the header 2</a></li>
+                            <li class="list-level-3"><a href="#">the header 3</a></li>
+                            <li class="list-level-3"><a href="#">the header 4</a></li>
+                            <li class="list-level-3"><a href="#">the header 5</a></li>
+                        </ul>
+                    </li>
+                    <li  class="menu-level-3"><a href="#">list 4</a>
+                        <ul>
+                            <li class="list-level-3"><a href="#">the header 1</a></li>
+                            <li class="list-level-3"><a href="#">the header 2</a></li>
+                            <li class="list-level-3"><a href="#">the header 3</a></li>
+                            <li class="list-level-3"><a href="#">the header 4</a></li>
+                            <li class="list-level-3"><a href="#">the header 5</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+
+
+            <li><a href="#">Begin</a>
+                <ul>
+                    <li class="menu-level-3"><a href="#">list 1</a>
+                        <ul>
+                            <li class="list-level-3"><a href="#">the header 1</a></li>
+                            <li class="list-level-3"><a href="#">the header 2</a></li>
+                            <li class="list-level-3"><a href="#">the header 3</a></li>
+                            <li class="list-level-3"><a href="#">the header 4</a></li>
+                            <li class="list-level-3"><a href="#">the header 5</a></li>
+                        </ul>
+                    </li>
+                    <li  class="menu-level-3"><a href="#">list 2</a>
+                        <ul>
+                            <li class="list-level-3"><a href="#">the header 1</a></li>
+                            <li class="list-level-3"><a href="#">the header 2</a></li>
+                            <li class="list-level-3"><a href="#">the header 3</a></li>
+                            <li class="list-level-3"><a href="#">the header 4</a></li>
+                            <li class="list-level-3"><a href="#">the header 5</a></li>
+                        </ul>
+                    </li>
+                    <li  class="menu-level-3"><a href="#">list 3</a>
+                        <ul>
+                            <li class="list-level-3"><a href="#">the header 1</a></li>
+                            <li class="list-level-3"><a href="#">the header 2</a></li>
+                            <li class="list-level-3"><a href="#">the header 3</a></li>
+                            <li class="list-level-3"><a href="#">the header 4</a></li>
+                            <li class="list-level-3"><a href="#">the header 5</a></li>
+                        </ul>
+                    </li>
+                    <li  class="menu-level-3"><a href="#">list 4</a>
+                        <ul>
+                            <li class="list-level-3"><a href="#">the header 1</a></li>
+                            <li class="list-level-3"><a href="#">the header 2</a></li>
+                            <li class="list-level-3"><a href="#">the header 3</a></li>
+                            <li class="list-level-3"><a href="#">the header 4</a></li>
+                            <li class="list-level-3"><a href="#">the header 5</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
             <li><a href="#">Aqua</a></li>
             <li><a href="#">About</a></li>
             <li><a href="#">Services</a></li>
@@ -56,8 +136,9 @@
 <script type="text/javascript">
     $(function () {
 
-        let $list = $('#nav-head ul > li');
-        let $l_href = $list.find('a');
+        let $list = $('#nav-head > ul > li');
+        // let $l_href = $list.find('a'); // level 1
+        let $l_href = $list.find(' > a'); // level 2
 
         $l_href.on('click',function () {
             $list.each(function() {

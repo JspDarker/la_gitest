@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>@Flex For Dev</title>
+    <link rel="stylesheet" href="css/flex-style.css">
+</head>
+<body>
+
+<div class="container-full">
+    <!--Header-->
+    <header>
+        <h3>this is title</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium cumque expedita laborum laudantium libero nihil non odit qui sit vero?</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium cumque expedita laborum laudantium libero nihil non odit qui sit vero?</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium cumque expedita laborum laudantium libero nihil non odit qui sit vero?</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium cumque expedita laborum laudantium libero nihil non odit qui sit vero?</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium cumque expedita laborum laudantium libero nihil non odit qui sit vero?</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium cumque expedita laborum laudantium libero nihil non odit qui sit vero?</p>
+    </header>
+    <!--/. End Header-->
+
+
+    <!--Nav-->
+    <nav id="nav-head">
+        <div class="brand-logo">
+            <div class="image-relative">
+                <img src="images/amazon.png" alt="amazon">
+                <small><a href="#">amazon.dev</a></small>
+            </div>
+        </div>
+
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Green</a></li>
+            <li><a href="#">Begin</a></li>
+            <li><a href="#">Aqua</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+        </ul>
+    </nav>
+    <!--/.Nav-->
+
+    <!--Main Body-->
+    <div class="container">
+        <aside id="aside-left"></aside><!--/. Aside left-->
+        <section id="middle-content"><!--wrapper main content-->
+            <article id="items">
+                <h2>This is text</h2>
+            </article><!--/. End article items-->
+        </section><!--/. wrapper main content-->
+        <aside id="aside-right"></aside>
+    </div><!--/. Main Body-->
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script type="text/javascript">
+    $(function () {
+
+        let $list = $('#nav-head ul > li');
+        let $l_href = $list.find('a');
+
+        $l_href.on('click',function () {
+            $list.each(function() {
+                if($l_href.hasClass('active-nav')){
+                    $l_href.removeClass('active-nav');
+                }
+            });
+            $(this).addClass('active-nav');
+        });
+    });
+</script>
+</body>
+</html>

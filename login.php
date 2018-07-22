@@ -17,6 +17,6 @@ class Login
 
     public function doSome()
     {
-        return 1;
+        return 10;
     }
 }

@@ -1,0 +1,96 @@
+li {
+    list-style-type: none;
+}
+/*GLOBAL*/
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    font-size: 16px;
+    background: #fff;
+}
+
+.container {
+    width: 90%;
+}
+
+.container-full {
+    width: 100%;
+}
+
+/*NAV brand*/
+nav#nav-head {
+    display: flex;
+    background: #232f3e;
+    height: 60px;
+    box-shadow: 0 4px 4px 0 rgba(0,0,0,.5);
+    /*position: relative;*/
+    align-items: center;
+
+
+}
+nav#nav-head .brand-logo img {
+    height: 50px;
+}
+
+nav#nav-head .brand-logo {
+    flex: 1;
+}
+nav#nav-head .brand-logo .image-relative {
+    position: relative;
+    top: 3px;
+    left: 60px;
+    width: 70px;
+}
+
+nav#nav-head .brand-logo small {
+    position: absolute;
+    top: 32px;
+    left: 65px;
+
+}
+nav#nav-head .brand-logo small a {
+    color: red;
+}
+/*NAV*/
+nav#nav-head > ul {
+    display: flex;
+    /*align-items: flex-start;*/
+    align-content: flex-end;
+    text-align: center;
+
+}
+
+nav#nav-head ul > li {
+    width: 100px;
+    display: block;
+    height: 60px;
+    line-height: 60px;
+}
+
+nav#nav-head ul > li:hover {
+    background: rgba(0,0,0,.2);
+}
+
+nav#nav-head ul > li a:hover {
+    color: aqua;
+}
+
+nav#nav-head ul li a {
+    display: block;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    margin-right: 5px;
+    height: 45px;
+}
+.active-nav {
+    border-bottom: aqua solid 3px;
+    color: aqua !important;
+}

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>@Js</title>
+    <link rel="stylesheet" href="css/responsive-style.css">
+</head>
+<body>
+<h3>This is title</h3>
+<h3 class="home">This is bootstrap</h3>
+<button onclick="clickMe()">Click me</button>
+
+<div class="main">
+    <h3>This is Get</h3>
+    <h3 class="home">This <span>is </span>PHP</h3>
+    <button onclick="clickMe1()">Click me 2</button>
+</div>
+
+
+<script type="text/javascript">
+    (function (a) {
+        console.log(a);
+    })(2);
+    let name = document.querySelectorAll('h3');
+
+    let multi = document.getElementsByTagName("h3");
+    let ht = multi[3].innerHTML;
+    let text = multi[3].innerText;
+    console.log(text);
+    function clickMe() {
+        for(let $i = 0; $i <name.length; $i++){
+            console.log(name[$i].innerText);
+        }
+    }
+</script>
+</body>
+</html>
